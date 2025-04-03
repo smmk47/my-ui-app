@@ -1,0 +1,22 @@
+/* src/components/Button/Button.module.css */
+.button {
+    background-color: #facc15; 
+    color: #422006; 
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.2s ease;
+    width: 100%; 
+  }
+  
+  .button:hover {
+    background-color: #f5b013; 
+  }
+  
+  .button:active {
+    background-color: #e4a10b; 
+  }
