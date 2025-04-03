@@ -31,6 +31,12 @@ function App() {
     { id: 'p2', label: 'Page 2', checked: false },
     { id: 'p3', label: 'Page 3', checked: false },
     { id: 'p4', label: 'Page 4', checked: false },
+    { id: 'p5', label: 'Page 5', checked: false },
+    { id: 'p6', label: 'Page 6', checked: false },
+    { id: 'p7', label: 'Page 7', checked: false },
+    { id: 'p8', label: 'Page 8', checked: false },
+    { id: 'p9', label: 'Page 9', checked: false },
+
   ];
   const [pages, setPages] = useState(initialPages);
   const [allPagesChecked, setAllPagesChecked] = useState(false);
@@ -116,6 +122,7 @@ function App() {
             onChange={handleAllPagesChange}
           />
           <hr className={styles.divider} />
+          <div className={styles.itemslist}>
           {pages.map(page => (
             <CheckboxListItem
               key={page.id}
@@ -125,6 +132,7 @@ function App() {
               onChange={() => handlePageChange(page.id)}
             />
           ))}
+          </div>
            <hr className={styles.divider} />
           <div className={styles.cardButton}>
             <Button />

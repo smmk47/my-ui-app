@@ -99,3 +99,15 @@
 .cardButton {
   margin-top: 20px; /* Space above the button */
 }
+
+
+.itemslist {
+  max-height: 300px; /* Adjust height as needed */
+  overflow-y: auto;
+  -ms-overflow-style: none;  
+  scrollbar-width: none;  
+}
+
+.itemslist::-webkit-scrollbar {
+  display: none;
+}
